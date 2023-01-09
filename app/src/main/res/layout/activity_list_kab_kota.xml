@@ -25,10 +25,11 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
             android:text="     Pilih Kabupaten/Kota"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
