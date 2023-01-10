@@ -56,33 +56,46 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Daftar Arsip"
+            android:text="Daftar Arsip -"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/imageView4"
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Nama Kab/Kota"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:layout_constraintVertical_bias="1.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/padconst"
         android:layout_width="360dp"
-        android:layout_height="590dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
 
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view5"
             android:layout_width="358dp"
             android:layout_height="588dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/item_arsip_pad"/>
+            tools:listitem="@layout/item_arsip_pad" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -128,12 +141,12 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintStart_toEndOf="@+id/imagependirian"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.517" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imagependirian"
                 android:layout_width="37dp"
                 android:layout_height="37dp"
                 android:layout_marginStart="15dp"
