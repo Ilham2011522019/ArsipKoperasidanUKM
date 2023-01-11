@@ -30,6 +30,7 @@ class List_KabKota : AppCompatActivity() {
         supportActionBar?.hide()
 
         listkabkota = ArrayList()
+
         listkabkota.add(ListKabKota(R.drawable.kab_agam,"Agam"))
         listkabkota.add(ListKabKota(R.drawable.logo_padang_pariaman,"Padang Pariaman"))
         listkabkota.add(ListKabKota(R.drawable.logo_padang,"Padang"))
@@ -56,17 +57,10 @@ class List_KabKota : AppCompatActivity() {
         adapter.setOnItemClickListener(object : ListKabKotaAdapter.onItemClickListener{
             override fun onItemClick(position: Int) {
                 val intent = Intent(this@List_KabKota, ListArsipActivity::class.java)
+                intent.putExtra("logokabkota", listkabkota[position].logokabkota)
                 intent.putExtra("namakabkota", listkabkota[position].namakabkota)
                 startActivity(intent)
             }
         })
     }
-    override fun onSupportNavigateUp(): Boolean {
-        finish()
-        return true
-    }
-//    fun ke_listArsip(view: View) {
-//        intent = Intent(this, ListArsipActivity::class.java)
-//        startActivity(intent)
-//    }
 }

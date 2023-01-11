@@ -3,6 +3,7 @@ package com.example.arsipkoperasidanukmsumbar.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.arsipkoperasidanukmsumbar.R
@@ -21,7 +22,7 @@ class ListKabKotaAdapter(private val listkabkota:ArrayList<ListKabKota>): Recycl
     }
 
     class kabkotaViewHolder(itemView: View, listener: onItemClickListener):RecyclerView.ViewHolder(itemView){
-        val logo: ShapeableImageView = itemView.findViewById(R.id.logokabkota)
+        val logo: ImageView = itemView.findViewById(R.id.logokabkota)
         val nama: TextView = itemView.findViewById(R.id.namaKabkota)
         init {
             itemView.setOnClickListener{

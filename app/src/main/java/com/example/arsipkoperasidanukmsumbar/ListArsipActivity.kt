@@ -24,8 +24,10 @@ class ListArsipActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val bundle : Bundle? = intent.extras
+        val logokabkota = bundle!!.getInt("logokabkota")
         val namakabkota = bundle!!.getString("namakabkota")
 
+        binding.logodipilih.setImageResource(logokabkota)
         binding.textView8.text = namakabkota
 
         recyclerView = findViewById(R.id.recycler_view5)
